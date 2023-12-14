@@ -1,0 +1,110 @@
+/* Estilos generales */
+@media only screen and (max-width: 600px) {
+  /* Estilos para pantallas más pequeñas */
+
+  /* Ajustes para el encabezado */
+  .header {
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo-and-title {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+
+  .icon img {
+    margin-bottom: 10px;
+  }
+
+  .hola {
+    display: none;
+  }
+
+  /* Ajustes para el título "VIDEOS IA 3ºH PENSAMIENTO COMPUTACIONAL" */
+  .titulo {
+    font-size: 4vw;
+    letter-spacing: -2px;
+  }
+
+  /* Ajustes para el borde principal */
+  .bordes {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Ajustes para los cuadros de navegación */
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link,
+  .nav-link-active {
+    margin: 5px 0;
+  }
+
+  .square,
+  .square-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ajustes para el contenedor de videos */
+  .video-container video {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Ajustes para la pantalla de video individual */
+  .lightbox-video {
+    height: 250px;
+    width: 250px;
+  }
+
+
+
+
+
+  /* Ajustes para el footer */
+  .footer-top-box {
+    margin: 20px auto;
+  }
+
+  .top-widget-contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .widget-contact-info {
+    margin-bottom: 20px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .widget-contact-info:first-child {
+    padding-left: 125px; 
+  }
+
+  .widget-contact-info:last-child {
+    padding-right: 125px;
+  }
+
+  .widget-contact-info:nth-child(2) {
+    border-left: none;
+    border-right: none;
+  }
+  
+  
+
+  .container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}

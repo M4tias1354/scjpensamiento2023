@@ -1,0 +1,648 @@
+/* PARTE DE ARRIBA */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: block;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeInImages 1s ease forwards;
+}
+
+@keyframes fadeInImages {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.icon {
+  display: flex; /* Para permitir la alineación vertical del contenido */
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+.icon img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+h2 {
+  margin-bottom: 0px; /* Si deseas tener un margen, puedes ajustarlo según tus preferencias */
+  font-family: system-ui, sans-serif;
+  font-weight: lighter; /* Ajusta el grosor de la fuente (lighter significa más ligero) */
+  font-size: 1.3rem;
+}
+
+/* Estilo del enlace */
+.header a {
+  text-decoration: none; /* Quita el subrayado típico de los enlaces */
+  color: #fff; /* Color del enlace */
+  z-index: 2;
+}
+
+.image-section {
+  background-image: url("assets/img/IA-fondo.jpg");
+  background-size: cover;
+  background-position: center; /* Centra la imagen */
+  height: 460px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 5vw;
+  font-family: "Fira Mono", cursive;
+  opacity: 0;
+  animation: fadeInImages 1s ease forwards;
+  letter-spacing: -7px;
+  
+}
+
+/* FINAL PARTE DE ARRIBA */
+
+
+
+
+
+
+
+
+
+/* PRINCIPAL */
+
+.bordes {
+  /* Bordes del Nav Bar */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border: 0px solid transparent;
+  animation: fadeInImages 1s ease forwards;
+}
+
+@keyframes fadeInImages {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+/* SECCIÓN VIDEOS */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-link:hover .square { /* Fondo al pasar el ratón */
+  background-color: rgb(51, 58, 95); 
+}
+
+.square { /* Cuadro */
+  background-color: #000000; /* Fondo negro */
+  border-radius: 25px; /* Bordes curvos */
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text{ /* Letra apartado Nav Bar */
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* FIN SECCIÓN VIDEOS */
+
+
+
+
+
+
+
+
+
+/* SECCIÓN CERTIFICADOS */
+
+.nav-link-active{ 
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-link-active:hover .text-2 { /* Letra al pasar el ratón */
+  color: #444444; 
+}
+
+.square-2 { /* Cuadro */
+  background-color: #ffffff; /* Fondo negro */
+  border-radius: 25px; /* Bordes curvos */
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text-2 { /* Letra apartado Nav Bar */
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* FIN SECCION CERTIFICADOS */
+
+
+
+
+
+
+
+
+
+/* TITULO VIDEOS */
+
+.titulo-videos{
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 36px;
+  letter-spacing: -.015em;
+  color: #2c343e;
+  fill: #2c343e;
+  display:  block;
+  padding: 0;
+  padding-right: unset;
+  padding-left: unset;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* FIN TITULO VIDEOS */
+
+
+
+
+
+
+
+
+
+/* ALBUM VIDEOS */
+
+.video-container { 
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeInImages 1s ease forwards;
+  justify-content: space-between;
+}
+
+
+.video-container video{
+  width: calc(33.33% - 20px); /* Calcula el ancho para tres columnas con espacio entre ellas */
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+
+
+/* FIN ALBUM DE VIDEOS */
+
+
+
+
+
+
+
+
+
+/* PANTALLA DE VIDEO INDIVIDUAL */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+.lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fff;
+  padding: 65px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lightbox-video {
+  width: 100%;
+  max-height: 70vh;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.username {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* FIN PANTALLA DE VIDEO INDIVIDUAL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************16)Footer top*************************************/
+
+
+.footer-top {
+  padding: 50px 0 50px;
+  background-color: #1a1e21;
+  color: #7e7e7e;
+  font-size: 14px !important;  
+}
+
+.footer-top p {
+  font-size: 14px;
+  margin-bottom: 0;
+} 
+
+.footer-top-box {
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.footer-top h4 {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footer-top-box li {
+  padding: 5px 0 10px 0;
+  border-bottom: 1px dotted #333;  
+}
+
+.footer-top-box li:last-child {
+  border-bottom: 0!important;
+}
+
+.footer-top-box h5 {
+  margin-bottom: 5px;  
+}
+
+.footer-top-box .widget-img-thumb {
+  display: inline-block;
+  margin-right: 15px;
+  width: 60px;
+}
+
+.footer-top-box .widget-content {
+  overflow: hidden;
+}
+
+.footer-top-box .widget-date {
+  font-size: 12px;
+}
+
+
+.footer-top .input-holder input[type="email"] {
+  width: 100%;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  height: 39px;
+  padding: 10px 20px;  
+}
+
+
+.footer-top .input-holder input[type="submit"] {
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px;
+  line-height: 0;
+  text-indent: -999px;  
+}
+
+.footer-top .submit-bgcolor {
+  background-color: #00aef0;
+}
+
+
+.footer-top ul li a {
+  color: #7e7e7e; 
+}
+
+.footer-top ul li a:hover {
+  color: #fff;
+}
+
+
+.tag > a:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
+.contact-link-desc p {
+  font-size: 16px;  
+}
+
+.contact-link-desc h5 {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.top-widget-contacts {
+  display: flex;
+  justify-content: center; 
+}
+
+.widget-contact-info {
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.widget-contact-info:first-child {
+  padding-left: 0px; 
+}
+
+.widget-contact-info:last-child {
+  padding-right: 125px;
+}
+
+.widget-contact-info:nth-child(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff; 
+}
+
+
+
+
+
+
+
+.top-widget-contacts-title {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.top-widget-contacts-content {
+  font-size: 16px;
+  text-transform: capitalize; 
+}
+
+.widget-contact-info i {
+  margin-right: 10px;
+  color: #fff; 
+}
+
+
+
+
+.container-2{
+  display: flex;
+  margin: 20px;
+  font-size: 14px;
+  color: #7e7e7e;
+  justify-content: space-between;
+}
+
+
+.copyright{
+  padding-left: 150px;
+}
+
+.powered_by a{ 
+  padding-right: 150px;
+  text-decoration: none !important;
+  color: #7e7e7e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hacer responsive para dispositivos móviles */
+@media (max-width: 767px) {
+
+  .header {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .logo-and-title {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+
+  .hola {
+    display: none; /* Oculta el título "Pensamiento Computacional" en pantallas pequeñas */
+  }
+
+  /* Ajustes para el título "VIDEOS IA 3ºH PENSAMIENTO COMPUTACIONAL" */
+  .titulo {
+    font-size: 10vw; /* Ajusta el tamaño del título para pantallas pequeñas */
+    letter-spacing: -3px; /* Ajusta el espaciado de las letras si es necesario */
+  }  
+  
+  .bordes {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    margin: 5px 0;
+  }
+
+  .lightbox-content {
+    padding: 15px; 
+    width: 90%;
+  }
+  
+  .lightbox-video {
+    max-height: 50vh; 
+  }
+  
+  .video-container {
+    justify-content: center;
+  }
+  
+  .video-container video {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-top .footer-top-box {
+    margin: 15px auto; 
+  }
+  
+  .top-widget-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .widget-contact-info {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .widget-contact-info:nth-child(2) {
+    border: none;
+  }
+  
+  .copyright, 
+  .powered_by {
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+}
+
+/* Hacer responsive para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .video-container video {
+    width: 45%;
+  }
+  
+}
