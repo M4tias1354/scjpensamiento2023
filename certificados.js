@@ -41,9 +41,11 @@ function isElementInViewport(el) {
 }
 
 function updateOdometer(value) {
-  const numberString = value.toString().padStart(2, '0');
+  const numberString = value.toString().padStart(3, '0');
   digit1.textContent = numberString[0];
   digit2.textContent = numberString[1];
+  digit3.textContent = numberString[2];
+
 }
 
 function generateRandomNumber() {
@@ -76,7 +78,7 @@ function animateOdometer(finalValue) {
 window.addEventListener('scroll', function () {
   if (isElementInViewport(odometerContainer)) {
     // Iniciar la animación cuando el odómetro es visible
-    animateOdometer(90);
+    animateOdometer(680);
     // Eliminar el evento de desplazamiento después de iniciar la animación (opcional)
     window.removeEventListener('scroll', arguments.callee);
   }
